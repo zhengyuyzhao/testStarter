@@ -2,7 +2,7 @@
 .vertx/
 
 ### Eclipse ###
-
+file*/
 .metadata
 bin/
 tmp/
