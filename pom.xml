@@ -110,7 +110,7 @@
                 <configuration>
                     <imageName>starter/vertx-starter:latest</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
-                    <dockerHost>tcp://49.235.168.241:2375</dockerHost>
+                    <dockerHost>http://49.235.168.241:2375</dockerHost>
 
                     <serverId>docker-my</serverId>
                     <registryUrl>http://49.235.168.241/v1</registryUrl>
