@@ -110,6 +110,7 @@
                 <configuration>
                     <imageName>starter/vertx-starter:latest</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+                    <dockerHost>tcp://192.168.72.105:2375</dockerHost>
 <!--                    <buildArgs>-->
 <!--                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>-->
 <!--                    </buildArgs>-->
