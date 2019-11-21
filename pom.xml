@@ -114,9 +114,9 @@
 
                     <serverId>docker-my</serverId>
                     <registryUrl>http://49.235.168.241:5000/v1</registryUrl>
-<!--                    <buildArgs>-->
-<!--                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>-->
-<!--                    </buildArgs>-->
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
