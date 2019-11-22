@@ -3,13 +3,13 @@ vert:
   work-pool-size: 400
   instance: 16
 
-mongo:
-  host: 127.0.0.1
-  port: 27017
+#mongo:
+#  host: 127.0.0.1
+#  port: 27017
 #  username: advanpro_dev_dba
 #  password: iKt3jm2HDy9iZyRB
 #  authSource: advanpro_cms_test_db
-  authSource: yapi
+#  authSource: yapi
 
 
 

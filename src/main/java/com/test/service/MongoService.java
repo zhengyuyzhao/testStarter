@@ -8,6 +8,7 @@ import io.vertx.ext.web.RoutingContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +17,7 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 @Service
+@ConditionalOnBean(MongoClient.class)
 @Transactional(rollbackFor = Exception.class)
 public class MongoService {
     private static final Logger logger = LoggerFactory.getLogger(MongoService.class);

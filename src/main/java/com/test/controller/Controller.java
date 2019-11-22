@@ -45,7 +45,7 @@ public class Controller {
     @Autowired
     private Vertx vertx;
 
-    @Autowired
+    @Autowired(required = false)
     private MongoService mongoService;
 
     private City city;
