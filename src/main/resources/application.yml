@@ -1,15 +1,23 @@
 vert:
   port: 8000
-  work-pool-size: 400
-  instance: 16
+  work-pool-size: 200
+  instance: 1
+  ha: true
+#  eventBusOptions:
+#    clusterPublicPort: ${publicPort}
+#    clusterPublicHost: ${publicHost}
+#    clusterPublicHost: 192.168.10.164
+#    clusterPublicPort: 19000
+#    port: 9000
+#    host: 0.0.0.0
+#    clustered: true
 
-#mongo:
-#  host: 127.0.0.1
-#  port: 27017
-#  username: advanpro_dev_dba
-#  password: iKt3jm2HDy9iZyRB
-#  authSource: advanpro_cms_test_db
-#  authSource: yapi
+mongo:
+  host: 127.0.0.1
+  port: 27017
+  username: dev
+  password: 123456
+  authSource: develop
 
 
 

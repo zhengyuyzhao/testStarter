@@ -1,7 +1,7 @@
-FROM openjdk:8
+FROM adoptopenjdk/openjdk8-openj9:alpine-slim
 VOLUME /tmp
 ARG JAR_FILE
-ADD ${JAR_FILE} app.jar
-RUN bash -c 'touch /app.jar'
+COPY ${JAR_FILE} app.jar
 EXPOSE 8000
-ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 5701
+ENTRYPOINT java $JAVA_OPTS -Xshareclasses -Xquickstart -jar /app.jar
